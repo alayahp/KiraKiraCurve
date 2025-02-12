@@ -3,32 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Goth Aesthetic Webpage Demonstration</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>KiraKira Curve</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Raleway:wght@300;700&display=swap" rel="stylesheet">
   <style>
     /* Global Styling */
     body {
-      font-family: 'Courier New', Courier, monospace;
-      background-color: #1a1a1a;
-      color: #d4d4d4;
+      font-family: 'Raleway', sans-serif;
+      background-color: #ffe6f2;
+      background-image: url('https://www.transparenttextures.com/patterns/leopard.png');
+      color: #d63384;
       margin: 0;
       padding: 0;
+      text-align: center;
     }
 
     header {
-      background: linear-gradient(135deg, #333333, #666666);
+      background: linear-gradient(135deg, #ff69b4, #d63384);
       padding: 20px;
       text-align: center;
-      border-bottom: 5px solid #444;
+      border-bottom: 5px solid #ff1493;
     }
 
-    h1, h2, h3 {
-      color: #9a9a9a;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    h1 {
+      font-family: 'Sacramento', cursive;
+      font-size: 4rem;
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    h2, h3 {
+      font-family: 'Raleway', sans-serif;
+      color: #ff1493;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
     }
 
     nav {
-      background-color: #252525;
+      background-color: #ff66b2;
       padding: 10px;
     }
 
@@ -40,18 +50,18 @@
     }
 
     .nav-menu li {
-      margin: 0 15px;
+      margin: 0 20px;
     }
 
     .nav-menu a {
       text-decoration: none;
-      color: #d4d4d4;
+      color: #fff;
       font-weight: bold;
       transition: color 0.3s;
     }
 
     .nav-menu a:hover {
-      color: #c0392b;
+      color: #d63384;
     }
 
     main {
@@ -59,12 +69,12 @@
     }
 
     .box-layout {
-      background: rgba(60, 60, 60, 0.8);
-      border: 2px solid #444;
+      background: rgba(255, 255, 255, 0.8);
+      border: 2px solid #ff69b4;
       padding: 20px;
       margin: 20px 0;
-      border-radius: 10px;
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
     .feature-container {
@@ -74,29 +84,62 @@
     }
 
     .feature-box {
-      background: rgba(40, 40, 40, 0.9);
-      border: 2px solid #555;
+      background: rgba(255, 255, 255, 0.9);
+      border: 2px solid #ff1493;
       padding: 15px;
       margin: 10px;
       width: 30%;
-      min-width: 200px;
+      min-width: 250px;
       text-align: center;
       border-radius: 10px;
-      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     footer {
-      background: #252525;
-      color: #d4d4d4;
+      background: #ff66b2;
+      color: #fff;
       text-align: center;
       padding: 10px;
-      border-top: 5px solid #444;
+      border-top: 5px solid #d63384;
+    }
+
+    /* Styling for clickable image */
+    .image-map {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    .image-map img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Heart-framed image styling */
+    .heart-frame {
+      display: inline-block;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #fff;
+      border: 5px solid #ff1493;
+      margin: 20px;
+      position: relative;
+    }
+
+    .heart-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to My Goth Aesthetic CSS Demonstration Page</h1>
+    <h1>KiraKira Curve</h1>
   </header>
 
   <nav>
@@ -110,35 +153,53 @@
   <main>
     <section id="introduction" class="box-layout">
       <h2>Introduction</h2>
-      <p>This page demonstrates a variety of CSS concepts, styled in the dark, edgy aesthetic of Goth design.</p>
+      <p>Welcome to KiraKira Curve, the ultimate plus-size gyaru fashion brand! We bring you the best styles to make you shine.</p>
     </section>
 
     <section id="features" class="box-layout">
       <h2>Key Features</h2>
       <div class="feature-container">
-        <div class="feature-box child-box">
-          <h3>Box Layout</h3>
-          <p>This section uses floating elements and cleared layout to structure the content.</p>
+        <div class="feature-box">
+          <h3>Trendy Styles</h3>
+          <p>Explore the latest fashion trends for all body types, designed to make you stand out.</p>
         </div>
-        <div class="feature-box child-box">
-          <h3>Colors and Borders</h3>
-          <p>CSS-based colors, borders, and dimensions are applied throughout this page with dark tones.</p>
+        <div class="feature-box">
+          <h3>Vibrant Colors</h3>
+          <p>Our pieces come in bold, vibrant colors, perfect for creating a statement look.</p>
         </div>
-        <div class="feature-box child-box">
-          <h3>Visibility and Display</h3>
-          <p>Content visibility and display properties are demonstrated with attention to a themed aesthetic.</p>
+        <div class="feature-box">
+          <h3>Comfortable Fits</h3>
+          <p>Experience comfort without sacrificing style with our carefully crafted fits.</p>
         </div>
       </div>
     </section>
 
     <section id="conclusion" class="box-layout">
       <h2>Conclusion</h2>
-      <p>This project successfully integrates multiple CSS techniques to create a functional and visually appealing layout in the Goth style.</p>
+      <p>Join us at KiraKira Curve for an unforgettable fashion journey!</p>
+    </section>
+
+    <!-- Clickable Image -->
+    <section class="image-map">
+      <a href="https://honeywardrobe.com/cdn/shop/files/O1CN014k6K8c1OJmLzTDeWr__56971685.webp?v=1727427346&width=1080" target="_blank">
+        <img src="https://honeywardrobe.com/cdn/shop/files/O1CN014k6K8c1OJmLzTDeWr__56971685.webp?v=1727427346&width=1080" alt="Shop Now">
+      </a>
+    </section>
+
+    <!-- Heart-Framed Images -->
+    <section>
+      <div class="heart-frame">
+        <img src="https://64.media.tumblr.com/3ddc77386dcc724990333370924b5dc6/tumblr_nks34hcLjh1qf0ogoo2_1280.jpg" alt="Heart Image 1">
+      </div>
+      <div class="heart-frame">
+        <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9fb813c2-004b-4804-967a-9e0846448be9_1024x1024.jpeg" alt="Heart Image 2">
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Alayah Porter</p>
+    <p>&copy; 2025 KiraKira Curve. All rights reserved.</p>
   </footer>
 </body>
 </html>
+
