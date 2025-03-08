@@ -3,110 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KiraKira Curve</title>
+    <title>BTS Fan Page 💜🎤</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #ffe6f2;
+            background: #FFB6C1; /* Light pink background */
+            font-family: 'Times New Roman', serif;
+            font-size: 12px;
+            color: #4B0082; /* Indigo text color */
             text-align: center;
         }
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
+        header {
+            background: rgba(255, 182, 193, 0.8); /* Soft pink background */
+            padding: 20px;
+            border-radius: 15px;
         }
-        th, td {
-            border: 1px solid #ff66b2;
-            padding: 10px;
+        nav ul {
+            list-style: none;
+            padding: 0;
         }
-        th {
-            background-color: #ff99cc;
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
         }
-        ul {
-            list-style-type: square;
-            text-align: left;
-            display: inline-block;
+        nav a {
+            color: #4B0082; /* Indigo text color */
+            text-decoration: none;
+            font-weight: bold;
         }
-        ol {
-            list-style-type: upper-roman;
-            text-align: left;
-            display: inline-block;
+        .form-section, .media-section {
+            background: rgba(255, 105, 180, 0.7); /* Light pink with opacity */
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px;
+            color: #FFD700; /* Gold text color */
         }
         button {
-            background-color: #ff66b2;
-            color: white;
+            background-color: #FFD700; /* Gold button */
+            color: black;
+            padding: 10px 20px;
             border: none;
-            padding: 10px;
+            border-radius: 10px;
+            font-size: 16px;
             cursor: pointer;
+        }
+        button:hover {
+            background-color: #FF69B4; /* Hot pink button hover */
+        }
+        audio {
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .image-section img {
+            max-width: 100%;
+            border-radius: 15px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to KiraKira Curve! ✨</h1>
-    <h2>Fashion for Every Body 💖</h2>
+    <header>
+        <h1>💜 Welcome to the BTS ARMY Fan Page! 🎤</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <!-- Original Content (Preserved) -->
-    <div class="image-gallery">
-        <img src="https://acdcrag.com/cdn/shop/products/2_e90057d0-2b4b-4b49-aee5-d80b869f6f93_800x.jpg?v=1652764915" alt="Gyaru Fashion 1">
-        <img src="https://i.pinimg.com/474x/a9/c5/1e/a9c51e06c05b20fc2cff097dbb2821a8.jpg" alt="Gyaru Fashion 2">
-        <img src="https://cdn.everskies.com/media/attachment/J87HjwdDkrgEbclfjABY.png" alt="Gyaru Fashion 3">
-    </div>
+    <main>
+        <section class="form-section">
+            <h2>Join the BTS ARMY! 💜</h2>
+            <form>
+                <label for="name">🎶 Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="bias">💖 Choose Your Bias:</label>
+                <input type="radio" id="rm" name="bias" value="RM"> RM 🐨
+                <input type="radio" id="jin" name="bias" value="Jin"> Jin 🐹
+                <input type="radio" id="suga" name="bias" value="Suga"> Suga 🐱
+                <input type="radio" id="jhope" name="bias" value="J-Hope"> J-Hope ☀️
+                <input type="radio" id="jimin" name="bias" value="Jimin"> Jimin 🐥
+                <input type="radio" id="v" name="bias" value="V"> V 🐻
+                <input type="radio" id="jk" name="bias" value="Jungkook"> Jungkook 🐰
+                
+                <label for="fav-song">🎵 Favorite BTS Song:</label>
+                <input type="text" id="fav-song" name="fav-song">
+                
+                <button type="submit">Join! 💜</button>
+            </form>
+        </section>
+        
+        <section class="media-section">
+            <h2>🎶 Listen to BTS! 💜</h2>
+            <audio controls>
+                <!-- Example of a working audio file URL -->
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section class="image-section">
+            <h2>🌟 BTS Love 💜</h2>
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2MlrH2EYdm2-d7VA1OFqEvx9UzVBES0YfExexj72FFrJ9ZWzXNsk0y-zw8YBnc0L5_pQokvgpG6hE-asdyUO8IA" alt="BTS Image">
+        </section>
+    </main>
     
-    <p>Express yourself with bold and trendy gyaru fashion! Our collection is designed for confidence and fun. 🌟</p>
+    <footer>
+        <p>Made with love 💜 by a fellow ARMY! (≧◡≦) ♡</p>
+    </footer>
     
-    <!-- Styled Table -->
-    <table>
-        <tr>
-            <th>Product</th>
-            <th>Size</th>
-            <th>Price</th>
-        </tr>
-        <tr>
-            <td>Fluffy Pink Coat</td>
-            <td>XL - 4XL</td>
-            <td>$79.99</td>
-        </tr>
-        <tr>
-            <td>Heart Print Skirt</td>
-            <td>L - 5XL</td>
-            <td>$49.99</td>
-        </tr>
-        <tr>
-            <td>Decora Accessories Pack</td>
-            <td>One Size</td>
-            <td>$29.99</td>
-        </tr>
-        <tr>
-            <td>Pastel Platform Sneakers</td>
-            <td>6 - 11</td>
-            <td>$89.99</td>
-        </tr>
-    </table>
-    
-    <!-- Lists -->
-    <h3>Why You'll Love KiraKira Curve 💕</h3>
-    <ul>
-        <li>Inclusive Sizing</li>
-        <li>Trendy Gyaru Styles</li>
-        <li>High-Quality Materials</li>
-    </ul>
-    
-    <h3>Our Best Sellers ✨</h3>
-    <ol>
-        <li>Fluffy Pink Coat</li>
-        <li>Heart Print Skirt</li>
-        <li>Pastel Platform Sneakers</li>
-    </ol>
-    
-    <!-- JavaScript Button -->
-    <h3>Click for a Surprise! 🎀</h3>
-    <button onclick="openLink()">Click Me</button>
-    <p id="message"></p>
-    
-    <script>
-        function openLink() {
-            window.open("https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fview%2Fparapara-japanese-gyaru-dance-japan-gif-10598768&psig=AOvVaw27vBuqerQ1phSqRbaPBft7&ust=1740987201737000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCOjH7PHw6osDFQAAAAAdAAAAABAE", "_blank");
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
